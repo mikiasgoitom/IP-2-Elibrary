@@ -1,0 +1,12 @@
+{
+    "name": "mikia/html_css_e-library_project",
+    "require": {
+        "ramsey/uuid": "^4.7"
+    },
+    "authors": [
+        {
+            "name": "Mikias Goitom",
+            "email": "mikiasgoitom7@gmail.com"
+        }
+    ]
+}

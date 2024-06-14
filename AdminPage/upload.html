@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Books</title>
+    <link rel="icon" href="images/AASTU Logo 2_title.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/upload.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <a
+          href="admin.html"
+          class="back-button"
+          onclick="goToAdminPage()"
+          target="_blank"
+        >
+          <i class="las la-angle-left"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <h1>Upload Book</h1>
+      <form
+        action="#"
+        method="post"
+        enctype="multipart/form-data"
+        class="form-holder"
+      >
+        <label for="book-title">Book Title</label>
+        <input type="text" id="book-title" name="bookTitle" required />
+
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" required />
+
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" name="genre" required />
+
+        <div class="upload-box">
+          <label for="file-upload" class="custom-file-upload">
+            <span class="las la-cloud-upload-alt"></span> Upload
+          </label>
+          <input
+            type="file"
+            id="file-upload"
+            name="bookFile"
+            accept=".pdf"
+            required
+          />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy;2024 AASTU | Developed Software Savants&trade;</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
